@@ -1,0 +1,102 @@
+.container{
+    background-color: black;
+    color: white;
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    align-items: center;
+    padding-top: 15%;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    width: 100%;
+    justify-content: center;
+}
+.search input{
+    height: 28px;
+}
+.searchbtn{
+    background-color: red;
+    color: white;
+    padding: 8px 15px 8px 15px;
+    border: none;
+}
+.homimg{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../assets/netflixteaser.png');
+    height: 650px;
+    margin-top: -4%;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-left: 5%;
+}
+.item{
+    width: 300px;
+    
+    margin-top: 2%;
+}
+.hori{
+    margin-top: 30%;
+    overflow-x: hidden;
+    padding-bottom: 5%;
+    width: fit-content;
+    animation: scroll 90s linear infinite;
+    display: flex;
+}
+@keyframes scroll{
+    to{
+        transform: translate(-100%);
+    }
+}
+.view{
+    background-color: red;
+    padding: 2%;
+    list-style: none;
+    margin-top: 2%;
+    display: flex;
+    width: 26%;
+    border-radius: 5px;
+    align-items: end;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.horizontal{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.horizontal img{
+    margin-left: 5%;
+}
+@media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+        
+    }
+    .homimg{
+        height: 400px;
+        width: 100vw;
+    }
+    .box{
+        width: 100%;
+        flex-direction: column;
+        padding-left: 15%;
+    }
+    .moviephoto{
+        height: 300px;
+    }
+    .item{
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+}
