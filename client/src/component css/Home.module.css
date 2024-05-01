@@ -73,6 +73,7 @@
     display: flex;
     width: 100%;
     flex-direction: row;
+    overflow-x: hidden;
 }
 .horizontal img{
     margin-left: 5%;
